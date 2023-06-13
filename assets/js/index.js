@@ -30,11 +30,30 @@ function tambahData() {
 
   // Reset form input
   document.forms["dataMahasiswa"].reset();
+
+  // Menampilkan hasil tambah data
+  document.getElementById("hasilTambahData").innerHTML =
+    "Data berhasil ditambahkan: " +
+    "NIM: " +
+    nim +
+    ", Nama: " +
+    nama +
+    ", Kelas: " +
+    kelas +
+    ", Alamat: " +
+    alamat;
 }
 
 // Fungsi untuk menghapus baris data
 function hapusData(button) {
   const baris = button.parentNode.parentNode;
   const tabel = document.getElementById("tableMahasiswa");
+  tabel.deleteRow(baris.rowIndex);
+}
+
+// Fungsi untuk menghapus baris data
+function hapusData(button) {
+  const baris = button.parentNode.parentNode.parentNode; // Perbarui pemilihan baris
+  const tabel = document.getElementById("tabelMahasiswa");
   tabel.deleteRow(baris.rowIndex);
 }
