@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Kustom CSS -->
+    <link rel="stylesheet" href="assets/css/index.css" />
+
+    <title>CRUD JAVASCRIPT</title>
+  </head>
+  <body>
+    <!-- Bagian Container -->
+    <div class="container">
+      <!-- Bagian Content -->
+      <div class="content">
+        <h1 class="title">DATA MAHASISWA</h1>
+        <p>Form Tambah Data Mahasiswa</p>
+        <!-- Bagian Form -->
+        <form id="dataMahasiswa" action="">
+          <div class="div-input">
+            <input
+              type="text"
+              name="nim"
+              id="nim"
+              placeholder="Masukan NPM..."
+              autofocus
+            />
+            <input
+              type="text"
+              name="nama"
+              id="nama"
+              placeholder="Masukan Nama..."
+            />
+            <input
+              type="text"
+              name="kelas"
+              id="kelas"
+              placeholder="Masukan Kelas..."
+            />
+            <input
+              type="text"
+              name="alamat"
+              id="alamat"
+              placeholder="Masukan Alamat..."
+            />
+          </div>
+          <!-- Bagian Tombol Tambah -->
+          <div class="div-tambah">
+            <button type="button" class="btn-tambah" onclick="tambahData()">
+              Tambah Data
+            </button>
+            <button type="reset" class="btn-reset">
+              <a href="">Reset Data</a>
+            </button>
+            <button onclick="hapusData(this)" class="button-hapus">
+              Hapus
+            </button>
+          </div>
+          <!-- Bagian Tabel -->
+          <table id="tabelMahasiswa" class="tableMahasiswa">
+            <tr>
+              <th>NPM</th>
+              <th>Nama</th>
+              <th>Kelas</th>
+              <th>Alamat</th>
+            </tr>
+          </table>
+        </form>
+      </div>
+    </div>
+
+    <script src="asset/js/index.js"></script>
+  </body>
+</html>

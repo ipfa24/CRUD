@@ -1,0 +1,189 @@
+/* Common styles for all screen sizes */
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #e6e6e6;
+}
+
+p {
+  font-size: 30px;
+  margin: 20px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #c5a880;
+}
+
+.content {
+  width: 80%;
+  height: 90%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #e6e6e6;
+  box-shadow: 2px 2px 2px 2px initial;
+}
+
+.title {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.div-tambah {
+  gap: 10px;
+  width: 100%;
+  justify-content: flex-end;
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.div-input {
+  gap: 10px;
+  display: flex;
+  margin-top: 10px;
+  height: 60%;
+}
+
+input {
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  height: 50%;
+}
+
+.btn-tambah {
+  border: none;
+  padding: 5px;
+  opacity: 80%;
+  height: 35px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 15px;
+  color: #e6e6e6;
+  border-radius: 5px;
+  background-color: #532e1c;
+}
+
+.btn-reset {
+  border: none;
+  padding: 5px;
+  opacity: 70%;
+  height: 35px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 15px;
+  color: #e6e6e6;
+  border-radius: 5px;
+  background-color: #ff0000;
+}
+
+.button-hapus {
+  border: none;
+  padding: 5px;
+  opacity: 80%;
+  height: 35px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 15px;
+  color: #e6e6e6;
+  border-radius: 5px;
+  background-color: #fffa60;
+}
+
+table {
+  width: 100%;
+}
+
+.tableMahasiswa {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+
+.tableMahasiswa th,
+.tableMahasiswa td {
+  padding: 12px;
+  text-align: center;
+}
+
+.tableMahasiswa th {
+  background-color: #e6e6e6;
+  color: #010101;
+}
+
+.tableMahasiswa .hapus {
+  background-color: #c0392b;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tableMahasiswa .hapus:hover {
+  background-color: #a52c20;
+}
+
+.tableMahasiswa td {
+  border-bottom: 1px solid #532e1c;
+}
+
+.tableMahasiswa tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Responsive styles for mobile devices */
+@media only screen and (max-width: 600px) {
+  .content {
+    width: 90%;
+  }
+
+  .btn-tambah,
+  .btn-reset {
+    width: 50%;
+  }
+
+  .tableMahasiswa th,
+  .tableMahasiswa td {
+    font-size: 12px;
+  }
+
+  .tableMahasiswa .hapus {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+.button-hapus {
+  padding: 5px 10px;
+  background-color: #ff0000;
+  color: #e6e6e6;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button-hapus:hover {
+  background-color: #c70000;
+}
